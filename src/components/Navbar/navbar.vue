@@ -3,11 +3,12 @@
 
 <template>
     <nav class="navbar">
-      <div class="navbar-menu">
-        <div class="menu-icon" @click="toggleMenu">
-          <i :class="['fas', isMenuOpen ? 'fa-times' : 'fa-bars']"></i>
-          <h1>H</h1>
-        </div>
+        <div class="navbar-menu">
+            <div class="menu-icon" @click="toggleMenu">
+                <button>
+                    <i :class="['fas', isMenuOpen ? 'fa-times' : 'fa-bars']"></i>
+                </button>
+            </div>
         <div class="logo">
           <h1>LOGO</h1>
           <!-- Puedes agregar tu propio logo como una imagen o utilizar un componente de imagen -->
@@ -70,6 +71,7 @@
   </script>
   
   <style>
+
   .navbar {
     display: flex;
     align-items: center;
